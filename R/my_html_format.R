@@ -10,7 +10,7 @@ my_html_format = function(toc = TRUE, toc_float = TRUE, theme = "cosmo", ...) {
 
   # locations of resource files in the package
   pkg_resource = function(...) {
-    system.file(..., package = "my_rmd_template")
+    system.file(..., package = "MyRmdTemplate")
   }
 
   css    = pkg_resource("rmarkdown/resources/styles.css")
