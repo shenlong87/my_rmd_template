@@ -1,4 +1,4 @@
-#' Custom HTML template Juan Valero
+#' Custom HTML template Shenlong87
 #'
 #' Loads additional style and template file
 #'
