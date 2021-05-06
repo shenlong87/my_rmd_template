@@ -19,7 +19,7 @@ td {
     color: rgb(111, 111, 111);
     padding: 20px 30px;
 }
-  
+
 div.navbar-collapse.collapse {
   background-color: green;
   max-width: 1600px;
@@ -36,7 +36,7 @@ body {
 }
 
 /* Second Biggest container when floating TOC. Contained within body, but it contains row, so width has to be bigger*/
-div.container-fluid.main-container {
+.container-fluid.main-container {
 	background-color: gray;
 	max-width: 1900px;
 	border: 3px solid red;
@@ -44,7 +44,7 @@ div.container-fluid.main-container {
 
 /* Thirs Biggest container when floating TOC. Contained within fluid main container, so width will never be larger than that
 This only applies when there is a floating TOC */
-div.row {
+.row {
   background-color: gray;
   max-width: 1900px !important;
   margin: auto;
