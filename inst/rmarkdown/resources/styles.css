@@ -6,16 +6,66 @@
   overflow: auto;
   width: auto;
 }
-  th {
+th {
     background-color: #75AADB;
     color: white;
     font-weight: normal;
     padding: 20px 30px;
     text-align: center;
-  }
-  td {
+}
+
+td {
     background-color: rgb(238, 238, 238);
-    font-color: #4D4D4D;
     color: rgb(111, 111, 111);
     padding: 20px 30px;
-  }
+}
+  
+div.navbar-collapse.collapse {
+  background-color: green;
+  max-width: 1600px;
+  margin: auto;
+  border: 3px solid #73AD21;
+}
+
+/* Biggest container when floating TOC */
+body {
+  background-color: powderblue;
+  max-width: 2000px;
+  margin: auto;
+  border: 3px solid purple;
+}
+
+/* Second Biggest container when floating TOC. Contained within body, but it contains row, so width has to be bigger*/
+div.container-fluid.main-container {
+	background-color: gray;
+	max-width: 1900px;
+	border: 3px solid red;
+}
+
+/* Thirs Biggest container when floating TOC. Contained within fluid main container, so width will never be larger than that
+This only applies when there is a floating TOC */
+div.row {
+  background-color: gray;
+  max-width: 1900px !important;
+  margin: auto;
+  border: 3px solid blue;
+}
+
+/* tocify is for floating TOC only. Otherwise TOC is in container-fluid.main-container*/
+/* .tocify {
+  max-width: 200px !important;
+}
+ */
+/* body > div.container-fluid.main-container > div > div.toc-content.col-sm-12.col-md-8.col-lg-9 */
+
+/* #TOC {
+	border: 2px solid red;
+} */
+
+p {
+  border: 2px solid red;
+}
+
+h1 {
+  border: 2px solid black;
+}
