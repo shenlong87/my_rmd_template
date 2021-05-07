@@ -6,15 +6,18 @@
 #' @param ... additional arguments provided to \@code{html_document}
 #' @export
 #'
-my_html_format = function(toc = TRUE, toc_float = TRUE, theme = "cosmo", ...) {
+my_html_format = function(toc = TRUE, toc_float = TRUE, theme = "cosmo", css = "styles.css", footer = "footer.html", ...) {
 
   # locations of resource files in the package
   pkg_resource = function(...) {
     system.file(..., package = "MyRmdTemplate")
   }
 
-  css    = pkg_resource("rmarkdown/resources/styles.css")
-  footer = pkg_resource("rmarkdown/resources/footer.html")
+  css = css
+  footer = footer
+
+  # css    = pkg_resource("rmarkdown/resources/styles.css")
+  # footer = pkg_resource("rmarkdown/resources/footer.html")
 
   # call the base html_document function
   rmarkdown::html_document(
