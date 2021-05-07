@@ -20,10 +20,9 @@ my_html_format = function(toc = TRUE, toc_float = TRUE, theme = "cosmo", ...) {
   rmarkdown::html_document(
     toc = toc,
     toc_float = toc_float,
-    fig_width = 7,
-    fig_height = 5,
+    fig_width = 15,
     theme = theme,
-    code_folding = "hide",
+    # code_folding = "hide",
     css = css,
     number_sections = FALSE,
     includes = rmarkdown::includes(after_body = footer),
