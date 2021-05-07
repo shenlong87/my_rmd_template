@@ -6,7 +6,7 @@
 #' @param ... additional arguments provided to \@code{html_document}
 #' @export
 #'
-my_html_format = function(toc = TRUE, toc_float = TRUE, theme = "cosmo", css = "./resources/styles.css", footer = "./resources/footer.html", ...) {
+my_html_format = function(toc = TRUE, toc_float = TRUE, theme = "cosmo", css = "/resources/styles.css", footer = "/resources/footer.html", ...) {
 
   # locations of resource files in the package
   pkg_resource = function(...) {
